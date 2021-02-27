@@ -6,10 +6,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description"
-    content="Ray Consulting Limited: RCL Lets Encrypt, create free SSL/TLS certificates for websites.">
+    content="Ray Consulting Limited: RCL Lets Encrypt, create free SSL/TLS certificates for websites. 
+    Supports naked apex domains (mysite.com), subdomains (store.mysite.com), wild card domains (*.mysite.com), www subdomains (www.mysite.com). 
+    Supports SAN multi-domain SSL/TLS certificates.
+    Use RCL CertBot to install and renew certificate in Windows and Linux servers.">
   <meta name="author" content="Ray Consulting Limited">
 
   <title>RCL Lets Encrypt - Free SSL/TLS Certificates</title>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "RCL Lets Encrypt",
+      "operatingSystem": "Web Browser",
+      "applicationCategory": "DeveloperApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "4.99",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +43,7 @@
   <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
 
   <!-- Custom styles for this template -->
-  <link href="css/new-age.min.css" rel="stylesheet">
+  <link href="css/new-age.css" rel="stylesheet">
 
 </head>
 
@@ -62,7 +80,9 @@
       <div class="row h-100">
         <div class="col-lg-7 my-auto">
           <div class="header-content mx-auto">
-            <h1 class="mb-5">RCL Lets Encrypt. Create and install SSL/TLS certificates for your website.</h1>
+            <h1 class="mb-5">
+              RCL Lets Encrypt. Create and install SSL/TLS certificates for your website.
+            </h1>
             <a href="#try" class="btn btn-outline btn-xl js-scroll-trigger">Start Your Free Trial!</a>
           </div>
         </div>
@@ -94,7 +114,10 @@
     <div class="container">
       <div class="section-heading text-center">
         <h2>Create SSL/TLS Certificates</h2>
-        <p class="text-muted">Use the popular Lets Encrypt V2 API to create free SSL/TLS certificates</p>
+        <h3>Use the popular Lets Encrypt V2 API to create free SSL/TLS certificates</h4>
+        <p>Supports naked domains (mysite.com), subdomains (store.mysite.com), wild card domains (*.mysite.com), www subdomains (www.mysite.com).
+          Supports SAN multi-domain SSL/TLS certificates.
+          Automatically create and install SSL/TLS certificates in Azure App Services, Azure Key Vault.</p>
         <hr>
       </div>
       <div class="row">
@@ -117,14 +140,14 @@
                 <div class="feature-item">
                   <i class="fas fa-server text-primary"></i>
                   <h3>Supports Web Servers</h3>
-                  <p class="text-muted">Install SSL/TLS in Apache, Tomcat, NGINX, IIS, Plesk, CPanel, Azure, etc</p>
+                  <p class="text-muted">Install SSL/TLS in Apache, Tomcat, NGINX, IIS, Plesk, CPanel, Node.js, etc</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="feature-item">
                   <i class="fas fa-window-maximize text-primary"></i>
                   <h3>Simple to Use</h3>
-                  <p class="text-muted">Use our intuitive Web UI to create SSL/TLS certificates for your websites</p>
+                  <p class="text-muted">Use our intuitive <a href="https://rcl-letsencrypt-auto-ssl.github.io/docs/portal/portal.html" target="_blank">Web UI Portal</a> to create SSL/TLS certificates for your websites</p>
                 </div>
               </div>
             </div>
@@ -133,7 +156,7 @@
                 <div class="feature-item">
                   <i class="fas fa-robot text-primary"></i>
                   <h3>Automatic Renewals</h3>
-                  <p class="text-muted">Install our Windows Service or Linux Daemon to automatically renew certificates
+                  <p class="text-muted">Use <a href="https://rcl-letsencrypt-auto-ssl.github.io/docs/certbot/certbot.html" target="_blank">RCL CertBot</a> as a Windows Service or Linux Daemon to automatically install and renew certificates
                     in your web server</p>
                 </div>
               </div>
@@ -141,7 +164,7 @@
                 <div class="feature-item">
                   <i class="fas fa-code text-primary"></i>
                   <h3>API</h3>
-                  <p class="text-muted">Use our API and SDK to build your own system for certificate renewal and
+                  <p class="text-muted">Use our <a href="https://rcl-letsencrypt-auto-ssl.github.io/docs/api/api.html" target="_blank">API</a> and <a href="https://rcl-letsencrypt-auto-ssl.github.io/docs/sdk/sdk.html" target="_blank">SDK</a> to build your own system for certificate renewal and
                     installation in your web server</p>
                 </div>
               </div>

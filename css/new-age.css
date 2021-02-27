@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #fdcc52;
+  color: blueviolet;
   transition: all .35s;
 }
 
@@ -69,14 +69,14 @@ section h2 {
 }
 
 #mainNav .navbar-brand {
-  color: #fdcc52;
+  color: yellowgreen;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: #fcbd20;
+  color: yellowgreen;
 }
 
 #mainNav .navbar-toggler {
@@ -93,7 +93,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a.active {
-  color: #fdcc52 !important;
+  color: yellowgreen !important;
   background-color: transparent;
 }
 
@@ -108,7 +108,7 @@ section h2 {
 
 #mainNav .navbar-nav > li > a:hover,
 #mainNav .navbar-nav > li > a:focus:hover {
-  color: #fdcc52;
+  color: yellowgreen;
 }
 
 @media (min-width: 992px) {
