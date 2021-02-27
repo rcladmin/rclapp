@@ -54,6 +54,16 @@
   <!-- Custom styles for this template -->
   <link href="css/new-age.css" rel="stylesheet">
 
+  <!-- Google Analytics capture outbound click -->
+  <script>
+    var captureOutboundLink = function (url) {
+      ga('send', 'event', 'outbound', 'click', url, {
+        'transport': 'beacon',
+        'hitCallback': function () { document.location = url; }
+      });
+    }
+  </script>
+
 </head>
 
 <body id="page-top">
@@ -110,9 +120,11 @@
           <h2 class="section-heading">Try it in the Azure Marketplace</h2>
           <p>Subscribe to our SaaS application and try it for free for 30 days! Pay $USD 4.99 / month afterwards.</p>
           <div class="badges">
-            <a class="badge-link" target="_blank"
-              href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rayconsulting.002"><img
-                src="img/azure_marketplace.png" alt=""></a>
+            <a class="badge-link" target="_blank" 
+              onclick="captureOutboundLink('https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rayconsulting.002'); return false;"
+              href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rayconsulting.002">
+              <img src="img/azure_marketplace.png" alt="Subscribe in Azure Marketplace">
+            </a>
           </div>
         </div>
       </div>
