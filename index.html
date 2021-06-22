@@ -11,6 +11,24 @@
     gtag('js', new Date());
 
     gtag('config', 'G-1RZZ3CGTLB');
+    gtag('config', 'AW-1037407170');
+  </script>
+
+  <!-- Event snippet for Sign-up conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-1037407170/1dw3CKjF1qwBEMKn1u4D',
+        'event_callback': callback
+    });
+    return false;
+  }
   </script>
 
   <meta charset="utf-8">
@@ -183,11 +201,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
-          <h2 class="section-heading"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rayconsulting.002" target="_blank">Try it in the Azure Marketplace</a></h2>
+          <h2 class="section-heading">
+            <a onclick="gtag_report_conversion('https://rclapp.com')" href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rayconsulting.002" target="_blank">Try it in the Azure Marketplace</a></h2>
           <p class="text-light">Try it for free for 30 days! Pay $USD 4.99 / month afterwards.
           </p>
           <div class="badges">
-            <a class="badge-link" href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rayconsulting.002"
+            <a onclick="gtag_report_conversion('https://rclapp.com')" class="badge-link" href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rayconsulting.002"
               target="_blank">
               <img src="img/azure_marketplace.png" alt="Subscribe in Azure Marketplace">
             </a>
