@@ -15,11 +15,11 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="RCL is an online client for Let's Encrypt used to create free SSL/TLS certificates for websites. 
+  <meta name="description" content="RCL is an online client for Let's Encrypt used to create free SSL/TLS certificates for web apps in Microsoft Azure. 
     Supports wild card domains, SAN multi domain, naked apex domains, subdomains, www subdomains. 
-    Install SSL/TLS certificates in Apache, Tomcat, NGINX, IIS, Node.js, Plesk, cPanel, Azure, AWS, etc.
+    Install SSL/TLS certificates in Apache, Tomcat, NGINX, IIS, Node.js, Plesk, cPanel, etc. in a Virtual Machine.
     Use RCL CertificateBot to automatically install and renew certificate in Windows and Linux servers.
-    Automatically create and install SSL/TLS certificates in Azure App Services, Azure Key Vault">
+    Automatically create and install SSL/TLS certificates in Azure App Services, Azure Key Vault with the AutoRenew Function">
   <meta name="author" content="Ray Consulting Limited">
 
   <title>RCL - SSL/TLS Certificates</title>
@@ -91,14 +91,17 @@
         <div class="col-lg-7 my-auto">
           <div class="header-content mx-auto">
             <h1 class="mb-5">
-              RCL client for <i>Let's Encrypt&trade;</i>. Create and install free SSL/TLS certificates in your websites.
+              RCL client for <i>Let's Encrypt&trade;</i>
             </h1>
+            <h2>
+              Create and install free SSL/TLS certificates in your web apps. Optimized for Microsoft Azure cloud solutions.
+            </h2>
             <a href="#try" class="btn btn-outline btn-xl js-scroll-trigger">Get Started Now!</a>
             <div class="mt-4"><small> Let's Encrypt is a trademark of the <u><a class="text-light" href="https://www.abetterinternet.org/" target="_blank">Internet Security Research Group</a></u>. All rights reserved.</small></div>
           </div>
         </div>
         <div class="col-lg-5 my-auto">
-          <img src="img/main_image.png" class="img-fluid" alt="https browser">
+          <img class="img-fluid" src="img/main_image.png" class="img-fluid" alt="https browser">
         </div>
       </div>
     </div>
@@ -107,8 +110,11 @@
   <section class="features" id="features">
     <div class="container">
       <div class="section-heading text-center">
-        <h2><i>Let's Encrypt&trade;</i> API Client</h2>
-        <h3>Use the RCL client for <i>Let's Encrypt&trade;</i> to create free SSL/TLS certificates</h4>
+        <h2>
+          <i>Let's Encrypt&trade;</i> Client
+          <div class="m-3"><img height="60px" src="./img/azure.png"></div>
+        </h2>
+        <h4>Use the RCL client for <i>Let's Encrypt&trade;</i> to create free SSL/TLS certificates in Microsoft Azure</h4>
           <p>Supports naked domains (mysite.com), subdomains (store.mysite.com), wild card domains (*.mysite.com), www
             subdomains (www.mysite.com) and SAN multi-domains. Install SSL/TLS certificates in Apache, Tomcat, NGINX, IIS, Node.js, Plesk, cPanel, XAMPP, etc.
             Automatically create and install SSL/TLS certificates in Azure App Services, Azure Key Vault.</p>
@@ -132,36 +138,34 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <i class="fas fa-server text-primary"></i>
-                  <h3>Supports Web Servers</h3>
-                  <p class="text-muted">Install SSL/TLS in Apache, Tomcat, NGINX, IIS, Plesk, cPanel, Node.js, etc.</p>
+                  <i class="fas fa-globe text-primary"></i>
+                  <h3>App Services and Key Vault</h3>
+                  <p class="text-muted">Create certificates for <a
+                      href="https://docs.rclapp.com/portal/azure-appservice.html" target="_blank">Azure App Services</a> (Web Apps, Functions, Mobile Apps) and <a href="https://docs.rclapp.com/portal/azure-keyvault.html" target="_blank">Azure Key Vault<a></p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <i class="fas fa-window-maximize text-primary"></i>
-                  <h3>Simple to Use</h3>
-                  <p class="text-muted">Use our intuitive <a
-                      href="https://docs.rclapp.com/portal/portal.html" target="_blank">Web UI
-                      Portal</a> to create SSL/TLS certificates for your websites</p>
+                  <i class="fas fa-server text-primary"></i>
+                  <h3>Virtual Machines</h3>
+                  <p class="text-muted">Install SSL/TLS in Apache, Tomcat, NGINX, IIS, Plesk, cPanel, Node.js, etc. in your <a target="_blank" href="https://docs.rclapp.com/portal/stand-alone.html#certificate-installation">Virtual Machines</a></p>
                 </div>
               </div>
-            </div>
+              </div>
             <div class="row">
               <div class="col-lg-6">
                 <div class="feature-item">
                   <i class="fas fa-robot text-primary"></i>
                   <h3>Automatic Renewals</h3>
-                  <p class="text-muted">Use <a
-                      href="https://docs.rclapp.com/certbot/certbot.html" target="_blank">RCL
-                      CertificateBot</a> as a Windows Service or Linux Daemon to automatically install and renew certificates
-                    in your web server. Even IIS is supported.</p>
+                  <p class="text-muted">Use the <a target="_blank" href="https://docs.rclapp.com/autorenew/autorenew.html">AutoRenew Function</a> and
+                      <a href="https://docs.rclapp.com/certbot/certbot.html" target="_blank">
+                      CertificateBot</a> to automatically renew SSL/TLS certificates before they expire</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="feature-item">
                   <i class="fas fa-code text-primary"></i>
-                  <h3>API</h3>
+                  <h3>API and SDK</h3>
                   <p class="text-muted">Use our <a href="https://docs.rclapp.com/api/api.html"
                       target="_blank">API</a> and <a href="https://docs.rclapp.com/sdk/sdk.html"
                       target="_blank">SDK</a> to build your own system for certificate renewal and
@@ -188,6 +192,9 @@
               <img src="img/azure_marketplace.png" alt="Subscribe in Azure Marketplace">
             </a>
           </div>
+          <div class="text-center mt-3">
+            <img width="450" src="./img/mpn-logo.jpg" alt="Microsoft Partner">
+          </div>
         </div>
       </div>
     </div>
@@ -196,7 +203,7 @@
   <section class="cta">
     <div class="cta-content">
       <div class="container">
-        <h2>Secure your websites.</h2>
+        <h2>Secure your web apps.</h2>
         <a href="#try" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
       </div>
     </div>
@@ -210,9 +217,6 @@
           allowfullscreen></iframe>
       </div>
     </div>
-    <div class="text-center">
-      <img width="450" src="./img/mpn-logo.jpg" alt="Microsoft Partner">
-    </div>
   </section>
 
   <section class="contact bg-primary" id="docs">
@@ -222,11 +226,13 @@
         <li class="list-inline-item social-facebook">
           <a href="https://github.com/rcl-ssl" target="_blank">
             <i class="fab fa-github"></i>
+            <p>GitHub</p>
           </a>
         </li>
         <li class="list-inline-item social-facebook">
           <a href="https://docs.rclapp.com" target="_blank">
             <i class="fas fa-book"></i>
+            <p>Docs</p>
           </a>
         </li>
       </ul>
